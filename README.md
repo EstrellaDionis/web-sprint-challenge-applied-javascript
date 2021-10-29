@@ -10,10 +10,10 @@ You are not allowed to collaborate during the sprint challenge.
 
 ## Project Set Up
 
-- [ ] Fork and clone the repo. Delete your old fork from Github first if you are repeating this Unit.
-- [ ] Open the assignment in Canvas and click on the "Set up git" option.
-- [ ] Push your first commit: `git commit --allow-empty -m "first commit" && git push`.
-- [ ] Check to see that Codegrade has accepted your git submission.
+- [x] Fork and clone the repo. Delete your old fork from Github first if you are repeating this Unit.
+- [x] Open the assignment in Canvas and click on the "Set up git" option.
+- [x] Push your first commit: `git commit --allow-empty -m "first commit" && git push`.
+- [x] Check to see that Codegrade has accepted your git submission.
 
 ## Project Instructions
 
@@ -27,11 +27,11 @@ In meeting the minimum viable product (MVP) specifications listed below, your pr
 
 ### Instructions
 
-- [ ] Navigate to the root of the project with your command line.
-- [ ] Run `npm install` to download the dependencies listed in the `package.json` file.
-- [ ] Run `npm start` to compile the project and serve it.
-- [ ] Navigate Chrome to `http://localhost:3000`
-- [ ] In a separate terminal, run `npm test` to run tests.
+- [x] Navigate to the root of the project with your command line.
+- [x] Run `npm install` to download the dependencies listed in the `package.json` file.
+- [x] Run `npm start` to compile the project and serve it.
+- [x] Navigate Chrome to `http://localhost:3000`
+- [x] In a separate terminal, run `npm test` to run tests.
 
 **Steps Required for MVP:**
 
@@ -59,8 +59,14 @@ In meeting the minimum viable product (MVP) specifications listed below, your pr
 
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
-1. What is the DOM?
-2. What is an event?
-3. What is an event listener?
+1. What is the DOM? The Document Object Model is data that comprises the foundation of a document on the web. An example of this is HTML. It's essentially the skeleton for all webpages. 
+
+2. What is an event? An event is user interaction with pages on the web. There are many different methods of interaction such as click, moving their mouse of an item or even scrolling their mouse wheel. 
+
+3. What is an event listener? Event listenrs takes an event as previously mentioned and we give it a callback so that when the event is triggered, it runs the callback.
+
 4. Why would we convert a NodeList into an Array?
+
 5. What is a component?
+Components comprise in multiple parts which are HTML, CSS & Javascript.
+Componenets allows us to create these elements and add them to our DOM without actually going into the actual files which makes it easier for us as developers to add new objects to web pages. 
