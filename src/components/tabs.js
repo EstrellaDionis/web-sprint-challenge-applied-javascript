@@ -1,4 +1,24 @@
 const Tabs = (topics) => {
+  const topicsClass = document.createElement('div');
+  const javascript = document.createElement('div');
+  const bootstrap = document.createElement('div');
+  const technology = document.createElement('div');
+
+  topicsClass.classList.add('topics');
+  javascript.classList.add('tab');
+  bootstrap.classList.add('tab');
+  technology.classList.add('tab');
+
+  javascript.textContent = topics[0];
+  bootstrap.textContent = topics[1];
+  technology.textContent = topics[2]; //should this be a .foreach? 
+
+  topics.forEach(item => {
+    const div = document.createElement('div');
+    div.textContent = item;
+    div.classList.add('tab');
+    topicsClass.appendChild(div)
+  })
   // TASK 3
   // ---------------------
   // Implement this function which takes an array of strings ("topics") as its only argument.
