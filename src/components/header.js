@@ -17,7 +17,7 @@ const Header = (title, date, temp) => {
   tempClass.textContent = temp;
 
   
-  return headerClass; // dont think they asked for this here but made it just incase
+  return headerClass; 
   
 
   // TASK 1
