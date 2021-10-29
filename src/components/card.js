@@ -1,12 +1,34 @@
+import axios from 'axios';
+
 const Card = (article) => {
   const cardClass = document.createElement('div');
   const headline = document.createElement('div');
   const author = document.createElement('div');
-  const img = document.createElement('div');
+  const imgContainer = document.createElement('div');
+  const img = document.createElement('img');
   const authorName = document.createElement('span');
+
+  cardClass.classList.add('card');
+  headline.classList.add('headline');
+  author.classList.add('author');
+  imgContainer.classList.add('img-container');
+
+  headline.textContent = article.headline;
+  authorName.textContent = article.authorName;
+
+  cardClass.appendChild(headline);
+  cardClass.appendChild(author);
+  author.appendChild(imgContainer);
+  imgContainer.appendChild(img);
+  author.appendChild(authorName);
+
+  img.src = article.authorPhoto;
+
+  cardClass.addEventListener('click', () => {
+    console.log(article.headline);
+  })
+  return cardClass;
   
-
-
   // TASK 5
   // ---------------------
   // Implement this function, which should return the markup you see below.
@@ -28,6 +50,30 @@ const Card = (article) => {
 }
 
 const cardAppender = (selector) => {
+  axios.get(`http://localhost:5000/api/articles`)
+  .then(res => {
+    const items = res.data.articles;
+    items.bootstrap.forEach(article => {
+      document.querySelector(selector).appendChild(Card(article));
+    })
+    items.javascript.forEach(article => {
+      document.querySelector(selector).appendChild(Card(article));
+    })
+    items.jquery.forEach(article => {
+      document.querySelector(selector).appendChild(Card(article));
+    })
+    items.node.forEach(article => {
+      document.querySelector(selector).appendChild(Card(article));
+    })
+    items.technology.forEach(article => {
+      document.querySelector(selector).appendChild(Card(article));
+    })
+    
+  })
+
+
+
+
   // TASK 6
   // ---------------------
   // Implement this function that takes a css selector as its only argument.

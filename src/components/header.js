@@ -35,8 +35,6 @@ const Header = (title, date, temp) => {
 }
 
 const headerAppender = (selector) => {
-// the class is header-container in the html
-// selector in css is header-container
 const headerContainer = document.querySelector(selector);
 headerContainer.appendChild(Header('Star Lord', 'Zero to Hero', 98));
 

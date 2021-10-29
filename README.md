@@ -67,6 +67,7 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 4. Why would we convert a NodeList into an Array?
 
+
 5. What is a component?
 Components comprise in multiple parts which are HTML, CSS & Javascript.
 Componenets allows us to create these elements and add them to our DOM without actually going into the actual files which makes it easier for us as developers to add new objects to web pages. 
