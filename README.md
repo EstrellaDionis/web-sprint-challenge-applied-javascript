@@ -66,7 +66,7 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 3. What is an event listener? Event listenrs takes an event as previously mentioned and we give it a callback so that when the event is triggered, it runs the callback.
 
 4. Why would we convert a NodeList into an Array?
-
+For the ability to use higher order functions on them such as .forEach, .map etc. When we have them as a NodeList we do not have the ability to use these methods.
 
 5. What is a component?
 Components comprise in multiple parts which are HTML, CSS & Javascript.
